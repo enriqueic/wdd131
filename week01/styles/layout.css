@@ -26,7 +26,7 @@ body {
   
   footer {
     background: wheat;
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
     grid-column: 1 / 4;
   }
