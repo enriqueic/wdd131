@@ -63,6 +63,7 @@ main{
     flex-direction: row;
     margin: 3dvh;
     min-height: 60dvh;
+    max-width: 100%;
 }
 
 .card{
