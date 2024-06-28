@@ -76,14 +76,19 @@ main{
 .card p{
     padding: 10px;
     font-size: 20px;
+    text-align: justify;
 }
 
 .card img{
-    min-width: 150px;
+    min-width: 20dvh;
+    max-width: 40dvh;
     border: solid black 2px;
     max-height: 150px;
 }
 
+.content{
+    padding-inline: 1%;
+}
 
 #about, #location{
     display: flex;
