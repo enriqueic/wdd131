@@ -61,6 +61,7 @@ main{
     display: flex;
     flex-direction: row;
     margin: 3dvh;
+    margin-bottom: 1dvh;
     max-width: 100%;
 }
 
@@ -100,10 +101,20 @@ main{
     overflow-wrap: break-word;
 }
 
+#side ul{
+    height: 100%;
+}
+
 #side li{
     padding: 10px;
     font-size: 20px;
     margin-inline-start: 2em;
+}
+
+#side h2 {
+    margin: 0;
+    border-bottom: #444 solid 2px;
+    text-align: center;
 }
 
 h1{
@@ -124,6 +135,7 @@ footer {
     text-align: center;
     color: white;
     height: 100%;
+    padding-bottom: 0.5%;
 }
 
 footer p {
