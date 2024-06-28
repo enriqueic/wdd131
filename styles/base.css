@@ -68,6 +68,7 @@ main{
 .card{
     margin: 10px;
     border: solid black 2px;
+    border-radius: 8px;
     padding: 10px;
     background-color: white;    
     font-size: large;
@@ -117,20 +118,21 @@ main{
 
 #side h2 {
     margin: 0;
-    border-bottom: #444 solid 2px;
     text-align: center;
 }
 
 h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: gold;
     font-size: 30px;
     margin: 10px;
     padding: 2dvh;
+    text-shadow: 0 0 2.5px black, 0 0 2px black, 0 0 2px black, 0 0 3px black;
 }
 
 h2{
-    padding-bottom: 2px;
+    border-bottom: #444 solid 2px;
+    padding-bottom: 4px;
     text-align: center;
 }
 
@@ -140,6 +142,7 @@ footer {
     color: white;
     height: 100%;
     padding-bottom: 0.5%;
+    padding-top: 0.5%;
 }
 
 footer p {
