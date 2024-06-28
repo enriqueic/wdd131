@@ -80,7 +80,10 @@ main{
 
 .card img{
     min-width: 150px;
+    border: solid black 2px;
+    max-height: 175px;
 }
+
 
 #about, #location{
     display: flex;
@@ -89,7 +92,6 @@ main{
 
 #side{
     min-width: 25%;
-    justify-content: space-around;
 }
 
 #side li{
