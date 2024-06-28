@@ -8,6 +8,7 @@
         content="This is the homepage for Enrique Ibarra's classwork in WDD 131 - Dynamic Web Fundamentals." />
     <title>WDD 131: Dynamic Web Fundamentals - Enrique Ibarra</title>
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header><h1>WDD 131: Dynamic Web Fundamentals - <span class="name">Enrique Ibarra</div> </h1>
@@ -60,8 +61,8 @@
     </main>
 
     <footer>
-        <p>&copy;2024 | Enrique Ibarra | Mexico</p>
-        <p id="lastModified"></p>
+        <p>&copy;<span id="currentyear"></span> | Enrique Ibarra | Mexico</p>
+        <p id="lastModified"><span id="currentyear"></span></p>
     </footer>
     
 </body>
