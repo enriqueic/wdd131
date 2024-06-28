@@ -13,21 +13,22 @@ header {
 }
 
 .container{
+  background: lightgray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 50dvh;
 }
 
 .main-content {
-  background: lightgray;
   text-align: left;
   grid-column: span 2;
+  
 }
 
 .right-sidebar {
-  background: white;
   text-align: left;
   grid-column: 3;
+  background-color: white;
 }
 
 image{
@@ -47,6 +48,10 @@ h1 {
   margin-left: 1.5%;
   margin-top: 2dvh;
   margin-left: 3dvh;
+}
+
+p{
+  margin: 2dvh;
 }
 
 header h1{
