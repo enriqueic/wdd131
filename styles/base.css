@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 
 header {
@@ -94,6 +95,7 @@ main{
 #about, #location{
     display: flex;
     flex: auto 1;
+    align-items: center;
 }
 
 #about img{
@@ -103,7 +105,6 @@ main{
 #side{
     width: 50%;
     min-width: 22%;
-    overflow-wrap: break-word;
 }
 
 #side ul{
@@ -153,4 +154,35 @@ footer p {
     color: white;
     padding: 6px 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 900px) {
+    #header {
+        flex-direction: row;
+    }
+
+    #nav a {
+        padding: 4px;
+        font-size: 1em;
+    }
+
+    #nav a:hover {
+        box-shadow: none;
+    }
+
+    main {
+        display: block;
+    }
+
+    .card h2 {
+        padding: 4px;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .img{
+        align-self: center;
+    }
 }
