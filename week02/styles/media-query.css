@@ -1,0 +1,27 @@
+body{
+    font-family: Roboto;
+}
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid black;
+    padding: 1rem;
+    background: rgb(10,26,108);
+    background: radial-gradient(circle, rgba(10,26,108,1) 0%, rgba(101,124,252,1) 100%, rgba(114,133,223,1) 100%);
+}
+
+h1, footer{
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section{
+    background-color: white;
+    padding: 1rem;
+}
