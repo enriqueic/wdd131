@@ -1,5 +1,5 @@
-const appendbutton = document.querySelector("button");
-const favoritechapt0er = document.querySelector("#favchap")
+const appendbutton = document.querySelector("#append");
+const favoritechapter = document.querySelector("#favchap")
 const unorderedlist = document.querySelector("#list")
 
 const newlist = document.createElement("li")
@@ -9,4 +9,6 @@ deletebutton.textContent="❌"
 newlist.textContent=favoritechapter.value
 newlist.append(deletebutton)
 
-unorderedlist.append(newlist)
+appendbutton.addEventListener("click", function(){unorderedlist.append(newlist); console.log("done")});
+
+console.log("hi");
