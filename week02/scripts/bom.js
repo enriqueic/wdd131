@@ -1,22 +1,31 @@
-console.log("hi");
-
-const appendbutton = document.querySelector('#append');
-
-console.log(appendbutton.textContent)
-
-const favoritechapter = document.querySelector("#favchap");
+//Reference to the button
+const button = document.querySelector('button');
+//Reference to the ul
 const unorderedlist = document.querySelector("#list");
-appendbutton.addEventListener('click', addScripture());
+//Referente to the input
+let favoritechapter = document.querySelector("#favchap");
 
-let deletebutton = document.createElement("button");
-deletebutton.textContent="❌";
+
+button.addEventListener('click', function(){
+    if (favoritechapter.value.trim() !== ''){addScripture()}
+})
 
 function addScripture(){
-    if (favoritechapter.trim.value != null){
-        let newlist = document.createElement("li");
-        newlist.textContent=favoritechapter.value
-        newlist.append(deletebutton);
-        console.log("done");
-    }
-}
 
+    const deletebutton = document.createElement("button");
+    deletebutton.textContent="❌";
+
+    const newlist = document.createElement("li");
+    newlist.textContent=favoritechapter.value;
+    newlist.append(deletebutton);
+    
+    unorderedlist.append(newlist);
+
+    favoritechapter.value = "";
+    console.log("done");
+
+    deletebutton.addEventListener("click", function(){
+        unorderedlist.removeChild(newlist); 
+        favoritechapter.focus()
+    })
+}
