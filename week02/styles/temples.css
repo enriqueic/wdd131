@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header, footer{
+    background: rgb(5,11,43);
+    background: radial-gradient(circle, rgba(5,11,43,1) 0%, rgba(3,16,86,1) 100%, rgba(12,25,86,1) 100%);
+}
+
+#hamburger-menu{
+    padding: 1.5%;
+}
+
+
+.navigation-wrap a{
+    text-decoration: none;
+    color: beige;
+}
+
+.navigation-wrap a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    color: gold;
+}
+
+main{
+    background-color: beige;
+    max-width: 100%;
+    align-self: center;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #333 1.5px;
+    border-radius: 1.5%;
+    padding: 1em;
+    margin: 1em;
+}
+
+figcaption{
+    padding-top: 1em;
+}
+
+.navigation-wrap{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.navigation-wrap li{
+    margin: 5px;
+}
+
+.hamburger-button{
+    margin-bottom: 2em;
+}
+
+.hamburger-button::before{
+    margin: 1em;
+    content: "☰"
+}
+
+
+.hamburger-button.open::before{
+    content: "X";
+}
+
+.hamburger-button.open{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-wrap.open{
+    display: flex;
+    padding: 10px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
