@@ -73,6 +73,11 @@ figure{
     margin: 1em;
 }
 
+img{
+    height: auto;
+    width: 100%;
+}
+
 figcaption{
     padding-top: 1em;
 }
