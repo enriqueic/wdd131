@@ -1,5 +1,3 @@
-document.querySelector("#currentyear").innerHTML = `${new Date().getFullYear()}`;
-
 const hamburgerbutton = document.querySelector("#hamburger-menu")
 const navigation = document.querySelector(".navigation-wrap")
 
