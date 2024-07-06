@@ -52,7 +52,7 @@ body{
 }
 
 main{
-    width: 95%;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
