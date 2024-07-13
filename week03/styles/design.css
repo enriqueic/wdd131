@@ -68,6 +68,14 @@ section:nth-of-type(1){
 	background-color: #702963;
     padding: 0.75rem;
     outline: 2px solid black;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.callout p{
+	max-width: 70ch;
+	text-align: justify;
 }
 
 
