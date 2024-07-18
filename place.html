@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Enrique Ibarra"> <meta name="description" content="Wireframe application informing on a place I lived">
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <script href="scripts/place.js" defer></script>
+    <title>WDD 131 - Place - Enrique Ibarra</title>
+</head>
+<body>
+    <header>
+        <h1>Tijuana, Mexico</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 1280px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" width="1900" height="800">
+        </picture>
+
+        <section>
+            <div class="card" id="data">
+            <h2>Data</h2>
+            <ul class="data">
+                <li><strong>Area: </strong> </li>
+                <li><strong>Population: </strong> </li>
+                <li><strong>Capital: </strong> </li>
+                <li><strong>Languages: </strong></li>
+                <li><strong>Currency: </strong></li>
+                <li><strong>Time Zone: </strong></li>
+                <li><strong>Calling Code: </strong></li>
+                <li><strong>Internet TLD: </strong></li>
+            </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="card" id="weather">
+            <h2>Weather</h2>
+            <ul class="data">
+                <li><strong>Temperature: </strong></li>
+                <li><strong>Conditions: </strong></li>
+                <li><strong>Wind: </strong></li>
+                <li><strong>Wind Chill: </strong></li>
+            </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Enrique Ibarra | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
