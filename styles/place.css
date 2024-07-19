@@ -63,12 +63,11 @@ picture{
 .card{
     display: flex;
     flex-direction: column;
-    position: relative;
     gap: 1ch;
     border: solid 2px black;
-    padding-bottom: 3dvh;
-    padding-top: 1.5dvh;
-    padding-inline: 6dvh;
+    padding-bottom: 2ch;
+    padding-top: 1ch;
+    padding-inline: 3ch;
     background: rgba(255, 255, 255, 0.479);
 }
 
@@ -76,7 +75,7 @@ section{
     display: flex;
     align-items: end; 
     justify-content: end;
-    margin-inline: 10%;
+    margin-inline: 10dvh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3dvh;
 }
@@ -107,5 +106,5 @@ img{
 }
 
 li{
-    text-decoration: none;
+    list-style-type: none;
 }
