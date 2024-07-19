@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Enrique Ibarra"> <meta name="description" content="Wireframe application informing on a place I lived">
     <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script><script src="scripts/getdates.js" defer></script>
     <title>WDD 131 - Place - Enrique Ibarra</title>
 </head>
 <body>
     <header>
-        <h1>Tijuana, Mexico</h1>
+        <div class="box">
+            <h1>Tijuana, Mexico</h1>
+        </div>
     </header>
 
     <main>
         <picture>
-            <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 500px)" srcset="images/hero-small.webp">
             <source media="(max-width: 1024px)" srcset="images/hero-medium.webp">
             <img src="images/hero-large.webp" width="1900" height="600">
         </picture>
