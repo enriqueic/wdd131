@@ -7,14 +7,44 @@
     <meta name="description"
         content="This is the project homepage for Enrique Ibarra's classwork in WDD 131 - Dynamic Web Fundamentals." />
     <title>Latter-day Saint historic sites</title>
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css"> <link rel="stylesheet" type="text/css" href="styles/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>  <script src="scripts/map.js" defer></script>
 </head>
 
 <body>
-    <header> <h1>Hi</h1> </header>
-    <main></main>
-    <footer></footer>
+    <header> <h1>Latter-day Sites</h1> 
+        <nav>
+            <ul class="navigation wrap">
+                <li><a href="/project/places.html" title="List of places">Discover places</a></li>
+                <li><a href="/project/people.html" title="List of notable people">Discover people</a></li>
+                <li><a href="#">About the site</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="map">
+            <picture>
+                <img src="images/us.svg" width="900" height="600">
+            </picture>
+            <div class="pin independence-mo"> <span>Independence</span></div>
+            <div class="pin farwest-mo"> <span>Far West</span></div>
+            <div class="pin nauvoo-il"> <span>Nauvoo</span></div>
+            <div class="pin kirtland-oh"> <span>Kirtland</span></div>
+            <div class="pin fayette-ny"> <span>Fayette</span></div>
+            <div class="pin harmony"> <span>Harmony</span></div>
+            <div class="pin palmyra-ny"> <span>Palmyra</span></div>
+            <div class="pin vermont"> <span>Vermont</span></div>
+            <div class="pin salt-lake-city-ut"> <span>Salt Lake City</span></div>
+        </section>    
+
+        <section>
+            <input type="checkbox" name="See favorites"> <label>See favorites</label> <span id="favorites-span"></span>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Enrique Ibarra | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>

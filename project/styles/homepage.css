@@ -1,0 +1,94 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    outline: solid 0.1rem black;
+    overflow: hidden;
+    flex: 1; /* make each section occupy equal space */
+    height: 100%; /* make each section occupy the full height */
+}
+
+
+.pin{
+    background-color: blue;
+    position: relative;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+}
+
+.pin::before{
+    content: "";
+    background-color: blue;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pulse 1.3s ease-in-out infinite;
+}
+
+.pin span{
+    background-color: #333;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input{
+    margin: 2em;
+    margin-right: 0.5em;
+}
+
+.independence-mo{
+    bottom: 46.5%;
+    left: 60.5%;
+}
+
+.farwest-mo{
+    bottom: 50%;
+    left: 60%;
+}
+
+.nauvoo-il{
+    bottom: 55%;
+    left: 65%
+}
+
+.kirtland-oh{
+    bottom:63.5%;
+    left:80%
+}
+
+.harmony{
+    bottom:70%;
+    left: 87%;
+}
+
+.fayette-ny{
+    bottom: 72%;
+    left: 85%;
+}
+
+.palmyra-ny{
+    bottom: 77%;
+    left: 86%;
+}
+
+.vermont{
+    bottom: 83%;
+    left: 90%;
+}
+
+.salt-lake-city-ut{
+    bottom: 65%;
+    left: 35%;
+}

@@ -1,0 +1,99 @@
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* links */
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: color 0.2s ease;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* places section */
+  
+  .place {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .place p {
+    margin-bottom: 15px;
+  }
+  
+  .place figcaption {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .associated {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .associated- li {
+    margin-bottom: 10px;
+  }
+  
+  .associated a {
+    color: #337ab7;
+  }
+  
+  .associated a:hover {
+    color: #23527c;
+  }
+
+  /* Style the button */
+button {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button{
+  width: 150px;
+  text-align: center;
+}
+
+section.content > h2 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  button[type="button"] {
+    width: 100%; 
+  }
+}

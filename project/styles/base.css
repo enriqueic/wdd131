@@ -61,6 +61,7 @@ body{
 
 main{
     display: grid;
+    grid-template-columns: 2fr 1fr;
     margin: 2dvh;
     margin-bottom: 1dvh;
     max-width: 100%;
@@ -124,6 +125,33 @@ footer p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  text-decoration: none;
+  color: #0c6081; /* Light blue color */
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #F7F7F7; /* White background */
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top::before {
+  content: "\25B2"; /* Up arrow symbol */
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.back-to-top:hover {
+  color: #4682B4; /* Darker blue color on hover */
+  background-color: #E7E7E7; /* Light gray background on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
 @media screen and (max-width: 900px) {
     #header {
         flex-direction: row;
@@ -139,7 +167,8 @@ footer p {
     }
 
     main {
-        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .card h2 {
