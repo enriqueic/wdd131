@@ -3,6 +3,10 @@ img{
     height: auto;
 }
 
+body{
+    display: grid;
+}
+
 section{
     outline: solid 0.1rem black;
     overflow: hidden;
@@ -10,6 +14,14 @@ section{
     height: 100%; /* make each section occupy the full height */
 }
 
+section:last-of-type{
+    padding: 1em;
+}
+
+
+main{
+    grid-template-columns: 2fr 1fr;
+}
 
 .pin{
     background-color: blue;
@@ -91,4 +103,11 @@ input{
 .salt-lake-city-ut{
     bottom: 65%;
     left: 35%;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }

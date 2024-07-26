@@ -61,7 +61,6 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: 2fr 1f;
     margin: 2dvh;
     margin-bottom: 1dvh;
     max-width: 100%;
@@ -169,11 +168,6 @@ footer p {
 
     #nav a:hover {
         box-shadow: none;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .card h2 {
